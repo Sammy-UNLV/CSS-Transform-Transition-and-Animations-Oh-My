@@ -28,16 +28,31 @@ nav {
 }
 
 @keyframes top {
-  from {}
-  to {}
-}
+   /* moves the top line downard, and rotates the line downward from the left. */
+  from {
+    transform:translate(0px,0px) rotate(0deg);
+    background-color: rebeccapurple;
+  }
+  to {
+    transform:translate(0px, 33px) rotate(45deg);
+    background-color: ghostwhite;
 
+  }
+}
 @keyframes middle {
-  from {}
-  to {}
+   /* moves the bottom line up, and rotates the line upward from the left right. */
+  from {opacity:1;}
+  to {opacity:0;}
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  /* moves the bottom line up, and rotates the line upward on the right. */
+  from {
+    background-color: rebeccapurple;
+    transform:translate(0px,0px) rotate(0deg);
+  }
+  to {
+    transform:translate(0px,-33px) rotate(-45deg);
+    background-color: ghostwhite;
+  }
 }
